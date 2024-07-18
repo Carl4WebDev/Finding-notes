@@ -58,6 +58,30 @@ body{
     border-radius: 15px;
 }
 
+select {
+    font-size: 15px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10%;
+}
+
+.after-button{
+    display: none;
+    background-color: whitesmoke;
+    font-size: 30px;
+    animation: after-button 2s infinite;
+}
+@keyframes after-button {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 /* .output{
     display: flex;
