@@ -13,6 +13,24 @@ body{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+.footer {
+    width: 500px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+@media (max-width:500px) {
+
+    .main-container {
+        padding: 5px;
+        height: 400px;
+        width: 300px;
+    }
+    .footer {
+        width: 300px;
+    }
+}
+
 .input {
     font-size: 15px;
     font-weight: bold;
