@@ -49,7 +49,7 @@ let mode = document.getElementById("mode")
 
 let countdownTime = 4;
 let counter = 0;
-let repeat = 5
+let repeat = 10;
 let intervalId;
 
 button.disabled = true;
@@ -92,7 +92,7 @@ form.onsubmit = function(e) {
         clearInterval(intervalId);
         countdownTime = 4;
         counter = 0;
-        repeat = 5;
+        repeat = 10;
         document.getElementById('repeat').innerText = repeat + "x"
         startGame();
     }
@@ -159,7 +159,7 @@ form.onsubmit = function(e) {
                 document.getElementById('repeat').style.color = "black";
             }, 500)
             
-            if(counter >= 5){
+            if(counter >= 10){
                 clearInterval(intervalId)
                 input_1.innerText = cheerUpEmojis[Math.floor(Math.random() * cheerUpEmojis.length)]
                 input_2.innerText = cheerUpPhrases[Math.floor(Math.random() * cheerUpPhrases.length)]
