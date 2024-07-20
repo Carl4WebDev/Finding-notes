@@ -10,7 +10,8 @@ body{
     padding: 5px;
     height: 500px;
     width: 500px;
-    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 .input {
     font-size: 15px;
