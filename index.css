@@ -7,18 +7,39 @@ body{
 
 .main-container {
     background-color: skyblue;
-    padding: 20px;
-    height: 400px;
+    padding: 5px;
+    height: 500px;
     width: 500px;
     border-radius: 15px;
 }
-
+.input {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10%;
+}   
+.label {
+    display: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+.mode {
+    display: none;
+    font-weight: bold;
+}
 .time{
-    background-color: whitesmoke;
-    width: 200px;
-    height: 50px;
+    width: 230px;
+    height: 40px;
 }
 .play-button{
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+
+}
+.reset-button{
+    display:none;
     width: 100px;
     height: 100px;
 
@@ -34,6 +55,10 @@ body{
     height: 70px;
     
     background-color: whitesmoke;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.output-1.active{
+    transform: scale(1.5);
 }
 
 .output-2{
@@ -46,16 +71,23 @@ body{
     height: 70px;
 
     background-color: whitesmoke;
+
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+.output-2.active{
+    transform: scale(1.5);
 }
 
 .output-label-1{
     background-color: whitesmoke;
     border-radius: 15px;
+    font-weight: bold;
 }
 
 .output-label-2{
     background-color: whitesmoke;
     border-radius: 15px;
+    font-weight: bold;
 }
 
 select {
@@ -63,13 +95,16 @@ select {
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 10%;
+    font-weight: bold;
 }
 
 .after-button{
     display: none;
     background-color: whitesmoke;
     font-size: 30px;
+    font-weight: bold;
     animation: after-button 2s infinite;
+
 }
 @keyframes after-button {
     0% {
